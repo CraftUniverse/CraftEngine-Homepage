@@ -5,7 +5,6 @@ name: Deploy to Firebase Hosting
 
 on:
   workflow_dispatch:
-  push:
 
 permissions:
   checks: write
@@ -13,7 +12,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  build_and_deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,3 +25,4 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CRAFTENGINE_HOMEPAGE }}
           projectId: craftengine-homepage
+          channelId: live
