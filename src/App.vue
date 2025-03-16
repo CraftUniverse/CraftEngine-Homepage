@@ -33,7 +33,8 @@ import { ref } from "vue";
 
 const links = ref<{ title: string; url: string }[]>([
   { title: "Home", url: "/" },
-  { title: "Discord", url: "https://rcurl.de/cudc" },
+  { title: "Discord", url: "https://dc.craftengine.dev" },
+  { title: "Wiki", url: "https://wiki.craftengine.dev" },
   { title: "Github", url: "https://github.com/CraftUniverse" },
 ]);
 </script>
